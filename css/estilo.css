@@ -1,10 +1,46 @@
 
 body {
+    position: relative;
     font-family: 'Red Hat Text', sans-serif;
     margin: 0px;
     overflow-x: auto;
-    min-width: 100vh;
+    width: 100%;
 
+}
+
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    margin-right: 20px;
+}
+
+header h2 {
+    text-align: start;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 h1,
@@ -29,12 +65,13 @@ ol {
     margin: 0;
     flex-direction: column;
     background-image: url('https://patijinich.com/es/wp-content/uploads/sites/3/2017/07/112-islas-flotantes-de-mi-abuela-lali.jpg');
-    width: 100%;
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     align-items: center;
+
 }
 
 .listas {
@@ -60,7 +97,6 @@ h2 {
     background-color: rgba(255, 255, 255, 0.501);
     backdrop-filter: blur(10px);
     border: 1px solid #ccc;
-    padding: 1%;
     max-width: 55%;
     box-shadow: rgba(32, 32, 32, 0.394) 0px 16px 38px -4px;
     align-items: center;
@@ -97,4 +133,37 @@ img {
 
 .mapa {
     margin-bottom: 2%;
+}
+
+.flotante-caja {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    align-content: center;
+    box-shadow: 2px 2px 3px #999;
+    margin: 0;
+}
+
+.flotante {
+    margin-top: 16px;
+    text-align: center;
+}
+
+footer a {
+    border: none;
+    color: #ffffff;
+    display: inline-flex;
+    margin: 10px 0px 0px;
+    font-size: 20px;
+    align-items: center;
+    padding: 8px;
+
 }
