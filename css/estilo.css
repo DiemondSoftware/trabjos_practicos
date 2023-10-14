@@ -1,84 +1,62 @@
 
-body {
-    position: relative;
+body,
+html {
     font-family: 'Red Hat Text', sans-serif;
     margin: 0px;
+    padding: 0px;
     overflow-x: auto;
-    width: 100%;
-
-}
-
-header,
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-}
-
-nav,
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-
-header ul {
-    list-style: none;
-    display: flex;
-}
-
-header li {
-    margin-right: 20px;
-}
-
-header h2 {
-    text-align: start;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
+    max-width: 100%;
+    word-break: break-all;
 }
 
 h1,
 h2,
 h3 {
-    font-size: 28px;
+    font-size: 2rem;
     color: #000000;
     text-align: center;
+    text-overflow: ellipsis;
 }
 
 
 ul,
 ol {
-    margin-inline-end: 40px;
-    font-size: 18px;
+    font-size: 1rem;
     color: #171313;
+    margin: 0;
+    padding: auto;
+    font-weight: bold;
 }
 
 .seccionPrincipal {
     display: flex;
-    padding: 0px;
     margin: 0;
+    padding: 0;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
     background-image: url('https://patijinich.com/es/wp-content/uploads/sites/3/2017/07/112-islas-flotantes-de-mi-abuela-lali.jpg');
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     align-items: center;
-
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .listas {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    width:auto;
     margin: 5%;
+
+
 }
+
 
 h1,
 h2 {
@@ -97,73 +75,159 @@ h2 {
     background-color: rgba(255, 255, 255, 0.501);
     backdrop-filter: blur(10px);
     border: 1px solid #ccc;
-    max-width: 55%;
+    padding: 1%;
+    margin: auto;
+    height: auto;
+    width: 55%;
+
+    min-width: 10%;
+    padding: auto;
+    margin: auto;
     box-shadow: rgba(32, 32, 32, 0.394) 0px 16px 38px -4px;
     align-items: center;
-    text-align: left;
+    justify-content: center;
+    text-align: start;
+    flex-wrap: wrap;
+    align-content: center;
+
+     font-weight: bold;
+     
+
+
 }
 
 .textos {
     margin: 5% 0;
+    padding: 2%;
+    font-size: 1rem;
 }
 
 .lista1 {
     height: 1%;
+    padding: auto;
+    margin: auto;
+    max-width: 25%;
 }
 
-img {
+.foto-postre {
     box-shadow: rgb(72, 72, 72) 0px 0px 1em inset, rgb(72,
             72,
             72) 0px 0px .5em;
     max-width: 55%;
     height: 30%;
-    margin: 0;
+    margin: 2%;
 
 }
-
+.img {
+    filter: invert();
+    height: 45px;
+}
 .video-fuente,
 .mapa-fuente {
     max-width: 75%;
 }
 
-.lista1 {
-    margin: 0 5%;
-
+.lista2 {
+    max-width: 58%;
 }
 
 .mapa {
     margin-bottom: 2%;
 }
 
+.mapa-barrio {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    padding: auto;
+    margin: auto;
+    min-width: 20%;
+}
+
+
+footer>.mapa-barrio,
+footer>.bio {
+
+    margin: auto;
+}
+
+.footer .iconos-redes {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    list-style: none;
+    text-decoration: none;
+    margin: auto;
+    padding: auto;
+    min-width: 100px;
+
+
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+
+    flex-wrap: wrap;
+    padding: auto;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header i {
+    color: white;
+}
+footer {
+    align-items: center;
+    align-content: center;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0px;
+    width: 100%;
+
+}
+
 .flotante-caja {
     position: fixed;
+    display: flex;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 5%;
+    right: 2%;
+    justify-content: center;
     background-color: #25d366;
     color: #fff;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
     align-items: center;
-    align-content: center;
     box-shadow: 2px 2px 3px #999;
-    margin: 0;
+    margin: auto;
 }
 
 .flotante {
-    margin-top: 16px;
     text-align: center;
+    color: white;
 }
 
 footer a {
     border: none;
     color: #ffffff;
-    display: inline-flex;
-    margin: 10px 0px 0px;
-    font-size: 20px;
-    align-items: center;
+    width: auto;    
     padding: 8px;
 
 }
