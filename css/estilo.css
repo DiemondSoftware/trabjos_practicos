@@ -1,18 +1,22 @@
-
 body,
 html {
+    display: flex;
+    flex-direction: column;
     font-family: 'Red Hat Text', sans-serif;
     margin: 0px;
     padding: 0px;
+
     overflow-x: auto;
     max-width: 100%;
+
     word-break: break-all;
+
+
 }
 
 h1,
 h2,
 h3 {
-    font-size: 2rem;
     color: #000000;
     text-align: center;
     text-overflow: ellipsis;
@@ -21,41 +25,86 @@ h3 {
 
 ul,
 ol {
-    font-size: 1rem;
+
     color: #171313;
     margin: 0;
     padding: auto;
 }
 
-.seccionPrincipal {
+.icono-titulo {
     display: flex;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
     align-items: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+main .seccionPrincipal {
+    display: flex;
+
+    height: 100%;
+    flex-direction: column;
+
     background-image: url('https://patijinich.com/es/wp-content/uploads/sites/3/2017/07/112-islas-flotantes-de-mi-abuela-lali.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    align-items: center;
-    align-content: center;
+
+
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .listas {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 0;
-    width:auto;
+    width: auto;
     margin: 5%;
 
 
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
 
 h1,
 h2 {
@@ -73,7 +122,7 @@ h2 {
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.501);
     backdrop-filter: blur(10px);
-    border: 1px solid #ccc;
+    border: 0.1vh solid #ccc;
     padding: 1%;
     margin: auto;
     height: auto;
@@ -90,10 +139,13 @@ h2 {
     align-content: center;
 }
 
+
+
 .textos {
     margin: 5% 0;
     padding: 2%;
-    font-size: 1rem;
+    min-height: 25vh;
+
 }
 
 .lista1 {
@@ -112,10 +164,12 @@ h2 {
     margin: 2%;
 
 }
+
 .img {
     filter: invert();
-    height: 45px;
+    height: 8vh;
 }
+
 .video-fuente,
 .mapa-fuente {
     max-width: 75%;
@@ -145,7 +199,7 @@ footer>.bio {
     margin: auto;
 }
 
-.footer .iconos-redes {
+.iconos-redes {
     box-sizing: content-box;
     display: flex;
     justify-content: center;
@@ -153,15 +207,12 @@ footer>.bio {
     align-self: center;
     list-style: none;
     text-decoration: none;
-    margin: auto;
-    padding: auto;
-    min-width: 100px;
-
 
 }
 
 header,
 footer {
+    
     display: flex;
     align-items: center;
     background-color: #333;
@@ -173,25 +224,30 @@ footer {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    
+
+    padding: 1%;
+    min-height: 10vh;
+
+    justify-content: center;
+
 }
+
 header i {
     color: white;
 }
+
 footer {
-    align-items: center;
-    align-content: center;
-    background-color: #333;
-    color: #fff;
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 0;
-    margin: 0px;
+    background-color: #333;
+    color: #fff;
+
+    padding: 2% 0;
+    margin: 0;
     width: 100%;
+
 
 }
 
@@ -205,9 +261,9 @@ footer {
     justify-content: center;
     background-color: #25d366;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     align-items: center;
     box-shadow: 2px 2px 3px #999;
     margin: auto;
@@ -218,10 +274,24 @@ footer {
     color: white;
 }
 
-footer a {
+footer a,
+header a {
     border: none;
     color: #ffffff;
-    width: auto;    
-    padding: 8px;
+    width: auto;
+    padding: 0 2vw;
 
+}
+
+header a {
+    box-sizing: border-box;
+
+    color: #25d366;
+    text-decoration: none;
+    border-radius: 10%;
+
+}
+
+a:hover {
+    color: rgb(34, 168, 38);
 }
