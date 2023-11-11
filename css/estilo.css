@@ -1,17 +1,11 @@
-body,
-html {
+body {
+    align-content: center;
+    font-family: 'Red Hat Text', sans-serif;
     display: flex;
     flex-direction: column;
-    font-family: 'Red Hat Text', sans-serif;
+    width: 100%;
     margin: 0px;
     padding: 0px;
-
-    overflow-x: auto;
-    max-width: 100%;
-
-    word-break: break-all;
-
-
 }
 
 h1,
@@ -22,13 +16,10 @@ h3 {
     text-overflow: ellipsis;
 }
 
-
 ul,
 ol {
-
     color: #171313;
     margin: 0;
-    padding: auto;
 }
 
 .icono-titulo {
@@ -37,23 +28,51 @@ ol {
     align-items: center;
 }
 
+header,
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+header {
+    padding: 1%;
+    min-height: 10vh;
+    width: auto;
+    justify-content: center;
+}
+
+header i {
+    color: white;
+}
+
+footer a,
+header a {
+    border: none;
+    width: auto;
+    padding: 0 2vw;
+}
+
+header a {
+    color: #25d366;
+}
+
+
+
 nav li {
     list-style-type: none;
 }
 
-main .seccionPrincipal {
+main .seccionPrincipal,
+main .recomendaciones {
     display: flex;
-
-    height: 100%;
     flex-direction: column;
-
-    background-image: url('https://patijinich.com/es/wp-content/uploads/sites/3/2017/07/112-islas-flotantes-de-mi-abuela-lali.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -62,25 +81,31 @@ main .seccionPrincipal {
     padding: 0;
 }
 
+main .recomendaciones {
+    background-image: url('https://assets.elgourmet.com/wp-content/uploads/2023/03/isla-_krMPS40Zw5InKuUDJGjTe7tYfdpxQL-1024x683.png.webp');
+    height: 100%;
+}
+
+main .seccionPrincipal {
+    background-image: url('https://patijinich.com/es/wp-content/uploads/sites/3/2017/07/112-islas-flotantes-de-mi-abuela-lali.jpg');
+}
+
 .listas {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 0;
-    width: auto;
-    margin: 5%;
-
-
+    width: 100%;
 }
 
 nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 80%;
-
+    margin: auto;
 }
 
 h1,
@@ -92,8 +117,10 @@ h3 {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    margin: auto;
+    padding: 0;
 }
 
 nav li {
@@ -103,13 +130,11 @@ nav li {
     letter-spacing: 2px;
     font-weight: bold;
     font-size: 14px;
-
 }
 
 h1,
 h2 {
     text-decoration: underline;
-
 }
 
 .textos,
@@ -124,35 +149,26 @@ h2 {
     backdrop-filter: blur(10px);
     border: 0.1vh solid #ccc;
     padding: 1%;
-    margin: auto;
-    height: auto;
-    width: 55%;
-
-    min-width: 10%;
-    padding: auto;
-    margin: auto;
     box-shadow: rgba(32, 32, 32, 0.394) 0px 16px 38px -4px;
     align-items: center;
     justify-content: center;
     text-align: start;
-    flex-wrap: wrap;
     align-content: center;
 }
 
-
+.video {
+    margin: 5%;
+}
 
 .textos {
-    margin: 5% 0;
+    margin: 5% auto;
     padding: 2%;
-    min-height: 25vh;
-
+    width: 58%;
 }
 
 .lista1 {
-    height: 1%;
-    padding: auto;
     margin: auto;
-    max-width: 25%;
+    width: auto;
 }
 
 .foto-postre {
@@ -162,7 +178,6 @@ h2 {
     max-width: 55%;
     height: 30%;
     margin: 2%;
-
 }
 
 .img {
@@ -176,7 +191,8 @@ h2 {
 }
 
 .lista2 {
-    max-width: 58%;
+    max-width: 50%;
+    margin: 5% auto;
 }
 
 .mapa {
@@ -186,74 +202,40 @@ h2 {
 .mapa-barrio {
     display: flex;
     flex-direction: column;
-    max-width: 25%;
-    padding: auto;
     margin: auto;
-    min-width: 20%;
+    max-width: 65%;
 }
-
 
 footer>.mapa-barrio,
 footer>.bio {
-
     margin: auto;
 }
 
 .iconos-redes {
-    box-sizing: content-box;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-self: center;
+    flex-wrap: wrap;
     list-style: none;
     text-decoration: none;
-
 }
 
-header,
+
+
+
+
+
+
 footer {
-    
     display: flex;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-
     flex-wrap: wrap;
-    padding: auto;
-
-}
-
-header {
-    
-
-    padding: 1%;
-    min-height: 10vh;
-
     justify-content: center;
-
-}
-
-header i {
-    color: white;
-}
-
-footer {
-
-    display: flex;
-    flex-wrap: wrap;
     background-color: #333;
     color: #fff;
-
     padding: 2% 0;
-    margin: 0;
     width: 100%;
-
-
 }
 
 .flotante-caja {
     position: fixed;
-    display: flex;
+    display: none;
     width: 60px;
     height: 60px;
     bottom: 5%;
@@ -274,24 +256,40 @@ footer {
     color: white;
 }
 
-footer a,
-header a {
-    border: none;
+
+
+footer a {
     color: #ffffff;
-    width: auto;
-    padding: 0 2vw;
 
 }
 
-header a {
-    box-sizing: border-box;
 
-    color: #25d366;
-    text-decoration: none;
-    border-radius: 10%;
-
-}
 
 a:hover {
     color: rgb(34, 168, 38);
+}
+
+/* PARA RESOLUCIÓN DE TELÉFONO */
+@media (max-width: 575px) {
+
+    .flotante-caja {
+        display: flex;
+    }
+}
+
+/* PARA RESOLUCIÓN DE TABLET */
+@media (max-width: 768px) {
+    header a {
+
+        color: #259fd3;
+
+    }
+}
+
+/* PARA RESOLUCIÓN DESKTOP */
+@media (min-width: 992px) {
+
+    header a {
+        text-decoration: underline;
+    }
 }
