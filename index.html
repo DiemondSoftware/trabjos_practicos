@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Isla flotante receta</title>
+    <script>
+        alert("¡Bienvenido/a a Recetas Francesas!")
+    </script>
 </head>
 
 <body>
@@ -29,15 +32,17 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="./plantillas/contacto.html">Contacto</a></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/6714/6714978.png" class="btn-modo-oscuro"
+                        onclick="modoOscuro()"></li>
             </ul>
         </nav>
 
     </header>
     <main>
         <!-- INICIO PRIMERA SECCIÓN -->
-        <section class="seccionPrincipal">
-            <div class="textos">
-                <h1>Receta para hacer una Isla Flotante</h1>
+        <section class="seccionPrincipal" id="seccionprincipal">
+            <div class="textos" id="textos">
+                <h1 id="titulo">Receta para hacer una Isla Flotante</h1>
                 <p>La isla flotante es un postre procedente de Francia que consiste en un merengue servido flotando
                     sobre
                     una
@@ -51,8 +56,8 @@
                 <br>
             </div>
             <div class="listas">
-                <div class="lista1">
-                    <h2>Ingredientes:</h2>
+                <div class="lista1" id="lista1">
+                    <h2 class="ingredientes">Ingredientes:</h2>
                     <ul class="lista-dord">
                         <li>4 huevos</li>
                         <li>1 litro de leche</li>
@@ -61,8 +66,8 @@
                         <li>Caramelo líquido (opcional)</li>
                     </ul>
                 </div>
-                <div class="lista2">
-                    <h2>Preparación:</h2>
+                <div class="lista2" id="lista2">
+                    <h2 class="preparacion">Preparación:</h2>
                     <ol class="lista-ord">
                         <li>Separar las claras de las yemas de los huevos.</li>
                         <li>En un bol, batir las claras a punto de nieve.</li>
@@ -89,14 +94,14 @@
         <!-- CIERRE PRIMERA SECCIÓN -->
 
         <!-- INICIO SEGUNDA SECCIÓN -->
-        <section class="recomendaciones">
+        <section class="recomendaciones" id="recomendaciones">
             <div class="container">
                 <br>
                 <br>
                 <h3>¡Tenemos algunas recomendaciones para vos!</h3>
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-3 ">
-                        <div class="card tarjeta">
+                        <div class="card tarjeta" id="tarjeta1">
                             <img src="https://www.edreams.es/blog/wp-content/uploads/sites/5/2016/03/@alpajotangia-macarons.jpg.webp"
                                 class="card-img-top" alt="...">
                             <div class="card-body ">
@@ -108,7 +113,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 ">
-                        <div class="card tarjeta">
+                        <div class="card tarjeta" id="tarjeta2">
                             <img src="https://www.edreams.es/blog/wp-content/uploads/sites/5/2016/03/montblanc-2-@renasml.jpg.webp"
                                 class="card-img-top" alt="...">
                             <div class="card-body ">
@@ -121,7 +126,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 ">
-                        <div class="card tarjeta">
+                        <div class="card tarjeta" id="tarjeta3">
                             <img src="https://www.edreams.es/blog/wp-content/uploads/sites/5/2016/03/tarte-tatin-@twoandtwocafe.jpg.webp"
                                 class="card-img-top" alt="...">
                             <div class="card-body ">
@@ -133,7 +138,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 ">
-                        <div class="card tarjeta">
+                        <div class="card tarjeta" id="tarjeta4">
                             <img src="https://www.edreams.es/blog/wp-content/uploads/sites/5/2016/03/saint-honore-@viqui1993.jpg.webp"
                                 class="card-img-top" alt="...">
                             <div class="card-body ">
@@ -146,7 +151,7 @@
                     </div>
                 </div>
             </div>
-            <div class="video">
+            <div class="video" id="video">
                 <h3>Esta es una alternativa que podés mirar para hacer el postre:</h3>
                 <iframe class="video-fuente" width="560" height="315"
                     src="https://www.youtube.com/embed/G--mDpa1qPk?si=e4LExMKn_oPtbW_g" title="YouTube video player"
@@ -155,7 +160,7 @@
                     allowfullscreen></iframe>
             </div>
             <br><br>
-            <div class="mapa">
+            <div class="mapa" id="mapa">
                 <h3>Este es un restaurante francés que ofrece Isla Flotante como postre:</h3>
 
                 <iframe class="mapa-fuente"
@@ -184,12 +189,15 @@
                 <a href="https://www.instagram.com"><i class="fa-2x fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com"><i class="fa-2x fab fa-linkedin"></i></a>
             </div>
-            <div class="bio">Mi nombre es Diego y soy desarrollador web y escritorio. </div>
+            <div class="bio">Mi nombre es Diego y soy desarrollador web y escritorio.
+                <button onclick="mostrarInfo()"> Acerca de mí</button>
+            </div>
         </footer>
 
     </main>
 
 
 </body>
+<script src="./js/script_principal.js"></script>
 
 </html>
