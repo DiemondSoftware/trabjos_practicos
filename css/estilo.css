@@ -11,14 +11,12 @@ body {
 h1,
 h2,
 h3 {
-    color: #000000;
     text-align: center;
     text-overflow: ellipsis;
 }
 
 ul,
 ol {
-    color: #171313;
     margin: 0;
 }
 
@@ -48,7 +46,13 @@ header i {
     color: white;
 }
 
+.btn-modo-oscuro:hover {
+    cursor: pointer;
+    filter: invert();
+}
+
 footer a,
+footer button,
 header a {
     border: none;
     width: auto;
@@ -130,6 +134,12 @@ nav li {
     letter-spacing: 2px;
     font-weight: bold;
     font-size: 14px;
+}
+
+.btn-modo-oscuro {
+    width: 5%;
+    height: 100%;
+
 }
 
 h1,
@@ -221,8 +231,8 @@ h2 {
     max-width: 65%;
 }
 
-footer>.mapa-barrio,
-footer>.bio {
+footer .mapa-barrio,
+footer .bio {
     margin: auto;
 }
 
@@ -278,7 +288,14 @@ footer a {
 
 }
 
+footer button {
+    background: none;
+    color: white;
+}
 
+footer button:hover {
+    color: #25d366;
+}
 
 a:hover {
     color: rgb(34, 168, 38);
